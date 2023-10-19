@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmtmtvf65eswf"]
+
+[ext_resource type="PackedScene" uid="uid://ckr8bdxy1c3xk" path="res://player.tscn" id="1_oet84"]
+[ext_resource type="PackedScene" uid="uid://b2xnot2gh0rwj" path="res://cheese.tscn" id="2_tuix6"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Cheese" parent="." instance=ExtResource("2_tuix6")]
+position = Vector2(467.538, 258.155)
+
+[node name="Cheese2" parent="." instance=ExtResource("2_tuix6")]
+position = Vector2(977.362, 272.297)
+linear_velocity = Vector2(-50, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_oet84")]
+position = Vector2(798.245, 271.724)
